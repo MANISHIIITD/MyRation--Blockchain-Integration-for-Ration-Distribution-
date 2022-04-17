@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>ShopOwner</title>
+
+    <link href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css' rel='stylesheet' type='text/css'>
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"></script>
+    <script src="./node_modules/web3/dist/web3.min.js"></script>
+    <script src="./shop_index.js"></script>
+    <link href="./index.css" rel='stylesheet' type='text/css'>
+</head>
+
+<body class="container">
+
+    <h1 class="page-header">Shop Owner's portal</h1>
+
+    <div class="row">
+        <div>
+            <h3 class="sub-header">Add new Beneficiary</h3>
+            <form class="form-inline" role="form">
+                <div class="form-group">
+                    <table>
+                        <tr>
+                            <td class="top"><label for="name">Name:</label> </td>
+                            <td class="top">
+                                <input class="form-control" id="name">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="top"><label for="age">Age:</label> </td>
+                            <td class="top">
+                                <input class="form-control" id="age">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="top"><label for="income">Income:</label> </td>
+                            <td class="top">
+                                <input class="form-control" id="income">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="top">UID: </td>
+                            <td>
+                                <label id="uid">
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <a href="#" onclick="AddNewUser()" class="btn btn-primary">Add user</a>
+            </form>
+        </div>
+    </div>
+
+    <div class="row">
+        <div>
+            <h3 class="sub-header">Get saved user information</h3>
+            <form class="form-inline" role="form">
+                <!-- <a href="#" onclick="registerGetInfo()" class="btn btn-primary">Get</a> -->
+                <div class="form-group">
+                    <table>
+                        <tr>
+                            <td class="top"><label for="uid2">Uid: </label> </td>
+                            <td>
+                                <input class="form-control" id="uid2">
+                            </td>
+                            <td class="button-space">
+                                <a href="#" onclick="GetUserInfo()" class="btn btn-primary">Get user</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="top">Age:</td>
+                            <td>
+                                <label id="age2">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="top">Balance:</td>
+                            <td>
+                                <label id="bal2">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="top">Name:</td>
+                            <td>
+                                <label id="name2">
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="center">
+        <button onclick="location.href='index.html'">Back</button>
+    </div>
+</body>
+
+</html>
